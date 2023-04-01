@@ -1,0 +1,80 @@
+body{
+  margin: 0;
+  padding: 0;
+  
+  font-family: 'Times New Roman', Times, serif;
+  background: linear-gradient(to left , lightblue, lightyellow);
+}
+
+/* .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.heading{
+  font-size: 65px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: darkblue;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.info-text{
+  color: rgb(221, 61, 61);
+  font-size: 25px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.app-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,300px);
+  justify-content: center;
+  gap:40px;
+  padding: 50px;
+}
+
+.note{
+  height: 200px;
+  box-shadow: 0 0 3px rgba(0,0,0,.3);
+  resize: none;
+  padding: 18px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background: rgba(0,0,0,.1);
+  color: rgb(20, 28, 242);
+  box-sizing: border-box;
+}
+
+.note::placeholder{
+  color: gray;
+  opacity: 30%;
+}
+
+.note:hover,.note:focus{
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+.btn{
+  height: 200px;
+  border-color: rgba(255,255,255,.37);
+  background: rgba(255,255,255,.27);
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 72px;
+  font-weight:700px;
+  color: rgba(0,0,0,.3);
+}
+
+.btn:hover{
+  background: rgba(255,255,255,.55);
+  color: rgba(0,0,0,.6);
+  transition: all 300ms ease;
+}
